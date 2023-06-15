@@ -43,3 +43,9 @@ type SearchResult = {
     pages?: Result[];
   };
 };
+
+type BlogPost = {
+  id: string;
+  title: string;
+  date: string;
+};

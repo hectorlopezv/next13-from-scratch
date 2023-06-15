@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Post from "./components/Post";
 
 export default function Home() {
   return (
@@ -6,6 +7,8 @@ export default function Home() {
       <h1>Hello world</h1>
       <Link href="/about">Link to about page</Link>
       <Link href="/users">Link to users page</Link>
+
+      <Post />
     </main>
   );
 }
