@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import NavBar from "./components/NavBar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], preload: true });
@@ -19,6 +20,7 @@ export default function RootLayout({
         <nav>
           <h1>my navbar</h1>
         </nav>
+        <NavBar />
         {children}
       </body>
     </html>
