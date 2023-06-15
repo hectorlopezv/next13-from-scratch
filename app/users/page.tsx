@@ -25,3 +25,10 @@ export default async function UsersPage({}: Props) {
     </section>
   );
 }
+
+export async function generateStaticParams() {
+  const users = await getAllUsers();
+  return users.map((user) => ({
+    userId: user.id.toString(),
+  }));
+}

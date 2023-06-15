@@ -1,9 +1,12 @@
-export default async function getUser(userId: string): Promise<User> {
+export default async function getUser(userId: string) {
   const res = await fetch(
-    "https://jsonplaceholder.typicode.com/users/" + userId
+    "https://jsonplaceholder.typicode.com/users/" + userId,
+    {
+      cache: "force-cache",
+    }
   );
   if (!res.ok) {
-    throw new Error("Something went wrong, while fetching user");
+    return undefined;
   }
   return res.json();
 }
