@@ -55,4 +55,14 @@ type Todo = {
   id: number;
   title: string;
   completed: boolean;
-}
+};
+type Meta = {
+  id: string;
+  title: string;
+  date: string;
+  tags: string[];
+};
+type BlogPostV2 = {
+  meta: Meta;
+  content: any;
+};

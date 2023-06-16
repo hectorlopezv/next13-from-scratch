@@ -1,5 +1,5 @@
 import getWikiResults from "@/lib/getWiki";
-import Item from "../components/Item";
+import Item from "../(components)/Item";
 
 type Props = {
   params: {
