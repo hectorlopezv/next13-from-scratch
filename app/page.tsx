@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Post from "./components/Post";
-
+// export const revalidate = 10; static
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

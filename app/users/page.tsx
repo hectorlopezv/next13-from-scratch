@@ -28,7 +28,7 @@ export default async function UsersPage({}: Props) {
 
 export async function generateStaticParams() {
   const users = await getAllUsers();
-  return users.map((user) => ({
+  return users.map((user: any) => ({
     userId: user.id.toString(),
   }));
 }
